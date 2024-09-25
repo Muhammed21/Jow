@@ -1,0 +1,534 @@
+@font-face {
+    font-family: 'Surt';
+    src: url(fonts/Surt-Medium.otf);
+    font-weight: 200;
+    font-style: normal;
+    font-display:block;
+}
+
+@font-face {
+    font-family: 'Viks';
+    src: url(fonts/Viksjow-Regular.otf);
+    font-weight: 200;
+    font-style: normal;
+    font-display:block;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Surt;
+    font-weight: 300;
+    box-sizing: border-box;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: max-content;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(244, 72, 49);
+    padding: 10px 35px;
+}
+
+.left-part {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    padding-left: 40px;
+}
+
+.right-part {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+}
+
+.vertical-separator {
+    border-left: 1px;
+    border-color: rgb(255, 255, 255);
+    height: 60px;
+    border-style: dashed;
+}
+
+.action-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: max-content;
+    gap: 50px;
+}
+
+.button {
+    background-color: white;
+    border-radius: 999px;
+    padding: 18px 30px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #ffc847;
+    transition: all 0.2s ease-out;
+}
+
+.Decouvrir {
+    font-family: Surt;
+    color: rgb(244, 72, 49);
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.connexion, .menu1, .menu2, .blog  {
+    font-size: 17px;
+    color: white;
+    cursor: pointer;
+}
+
+/* DEBUT HEADER */
+
+.header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 620px;
+    justify-content: space-between;
+}
+
+.left-part-header {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    padding: 10px 0px;
+    align-self: start;
+}
+
+.title-course {
+    font-size: 55px;
+    align-items: center;
+    text-align: center;
+    font-family: Viks;
+    padding: 0px 3.2rem;
+}
+
+.right-part-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffc847;
+    padding: 32px;
+    width: 100%;
+}
+
+.left-part-header {
+    background-color: #fdf4e7;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-header {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.button-2 {
+    background-color: rgb(244, 72, 49);
+    border-radius: 999px;
+    padding: 18px 35px;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    width: max-content;
+}
+
+.button-2:hover {
+    background-color: #ffc847;
+    transition: all 0.2s ease-out;
+}
+
+.subtitle {
+    font-size: 20px;
+}
+
+.bottom-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+}
+
+/* DEBUT RECETTE */
+
+.ensemble-recette {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    background-color: #ffffff;
+    border-right: 5px solid;
+    border-color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.desc1 img, .desc3 img {
+    width: 80px;
+}
+
+.desc2 img {
+    width: 35px;
+}
+
+.desc4 img {
+    width: 45px;
+}
+
+.recette {
+    background-color: #ffffff;
+    display: flex;
+    position: relative;
+    border-right: 1px dashed;
+    border-color: #dfdedef4;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.recette2 {
+    background-color: #ffffff;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.ingredients {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    padding: 0px 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.item-1, .item-2, .item-3, .item-4, .item-5, .item-6 {
+    width: 80px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.item-1, .item-2, .item-3, .item-4, .item-5, .item-6 p {
+    font-size: 13px;
+}
+
+.description {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: max-content;
+    border-top: 1px dashed;
+    padding: 0px 30px;
+    border-bottom: 1px dashed;
+    border-color: #dfdedef4;
+}
+
+.nbrperso{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    color: rgb(244, 72, 49);
+    font-size: 14px;
+}
+
+.desc2, .desc3 {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px dashed;
+    height: 65px;
+    width: 100%;
+    padding: 0 0;
+    align-items: center;
+    justify-content: center;
+    /* padding-right: 130px; */
+    border-color: #dfdedef4;
+}
+
+.desc1 {
+    display: flex;
+    align-items: center;
+    border-right: 1px dashed;
+    border-color: #dfdedef4;
+    justify-content: start;
+    height: 60px;
+    width: 100%;
+}
+
+.desc4 {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+}
+
+.description p {
+    font-size: 10px;
+    width: max-content;
+}
+
+.part2 {
+    background-color: #fdf4e7;
+    width: 100%;
+    padding: 15px 35px;
+    border-right: 10px solid;
+    border-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.part2-1 {
+    background-color: #fdf4e7;
+    width: 100%;
+    padding: 15px 35px;
+    border-left: 10px solid;
+    border-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.button-add {
+    background-color: rgb(244, 72, 49);
+    color: white;
+    display: flex;
+    width: max-content;
+    height: max-content;
+    flex-direction: row;
+    padding: 10px;
+    padding-right: 15px;
+    align-items: center;
+    cursor: pointer;
+    gap: 5px;
+    border-radius: 999px;
+}
+
+.button-add:hover {
+    background-color: #ffc847;
+    transition: all 0.2s ease-out;
+}
+
+.button-add p {
+    font-size: 12px;
+}
+
+.top-recette {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 10px 0;
+    font-size: 18px;
+    text-align: center;
+    align-items: center;
+}
+
+.top-recette h4 {
+    font-size: 15px;
+}
+
+.comment h4 {
+    color: #9b9999f4;
+    font-size: 13px;
+}
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.stars {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+}
+
+.recette-2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: start;
+    gap: 20px;
+}
+
+.title-recette {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.step-1-desc h4, .step-2-desc h4, .step-3-desc h4 {
+    font-size: 13px;
+    color: #7d7d7df4;
+}
+
+.step-1-desc, .step-2-desc, .step-3-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    font-size: 15px;
+}
+
+.step-1, .step-2, .step-3 {
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+/* DEBUT FOOTER */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+    background-color: rgb(7, 85, 38);
+    width: 100%;
+    gap: 20px;
+    height: max-content;
+}
+
+.left-part-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.logo-footer {
+    width: 50px;
+}
+
+.footer p {
+    font-size: 13px;
+    color: white;
+}
+
+.bottom-footer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+@media (max-width: 1000px) {
+    .ensemble-recette {
+        display: flex;
+        flex-direction: column;
+    }
+    .recette {
+        border-right: none;
+        padding-bottom: 40px;
+    }
+    .recette2 {
+        border-top: 1px dashed;
+        border-color: #000000;
+        padding-top: 40px;
+    }
+    .title-course {
+        font-size: 30px;
+    }
+    .header {
+        height: 500px;
+    }
+    .right-part-header {
+        display: none;
+    }
+    .left-part {
+        display: none;
+    }
+    .blog {
+        display: none;
+    }
+    .connexion {
+        display: none;
+    }
+    .vertical-separator {
+        display: none;
+    }
+}
+
+@media (max-width: 1100px) {
+    .title-course {
+        font-size: 40px;
+    }
+    .Decouvrir, .button-2 {
+        font-size: 15px;
+    }
+    .button, .button-2 {
+        padding:13px 20px;
+    }
+}
+
+@media (max-width: 450px) {
+    .title-course {
+        font-size: 25px;
+    }
+    .logo{
+        width: 50px;
+    }
+    .subtitle {
+        font-size: 15px;
+    }
+    .desc1 img, .desc3 img {
+        width: 50px;
+    }
+    .desc4 img {
+        width: 35px;
+    }
+    .desc4, .desc1 {
+        width: 80%;
+    }
+}
+
+/* CARRE TESTE */
+
+/* .carre-relative {
+    width: 600px;
+    height: 600px;
+    position: relative;
+    background-color: red;
+}
+
+.carre-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+.carre-2 {
+    position: absolute;
+    top: 0;
+    left: 500px;
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+} */
